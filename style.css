@@ -1,0 +1,73 @@
+
+body{
+    font-family:'Lato' ;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+h1{
+    color: white;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.content--task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.content--kaban{
+    display: flex;
+    justify-content: center;
+    min-height: 400px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgb(130, 136, 136);
+    min-width: 200px;
+    border-radius: 5px;
+
+}
+
+#input-new-task,
+#button-new-task{
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem; 
+ }
+
+#input-new-task{
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+
+#button-new-task{
+    background-color: rgb(34, 34, 34);
+    color:rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;  
+    cursor: pointer;
+    transition: .4s;  
+}

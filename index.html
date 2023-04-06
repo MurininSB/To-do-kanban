@@ -4,12 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <title>To Do</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--estilo da pagina-->
+    <link rel="stylesheet" href="./arquivos/fonts/fonts.css" />
+    <!--definição da fonte-->
+
+    <title>TO DO | SB</title>
   </head>
 
   <body>
-    <h1>To Do Kanban </h1>
+    <h1>TO DO KANBAN | Sávio Bentes</h1>
+
+    <!--Div Principal com conteúdos-->
+    <div class="content">
+      <!-- input, botão-->
+      <div class="content--task">
+        <input
+          type="text"
+          id="input-new-task"
+          placeholder="Digite sua nova Tarefa"
+        />
+        <button id="button-new-task">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-forward-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="m9.77 12.11 4.012-2.953a.647.647 0 0 0 0-1.114L9.771 5.09a.644.644 0 0 0-.971.557V6.65H2v3.9h6.8v1.003c0 .505.545.808.97.557z"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="content--kaban">
+        <div class="column">
+          <div class="item" draggable="true"></div>
+          <div class="item" draggable="true"></div>
+        </div>
+
+        <div class="column">
+          <div class="item" draggable="true"></div>
+          <div class="item" draggable="true"></div>
+        </div>
+
+        <div class="column">
+          <div class="item" draggable="true"></div>
+          <div class="item" draggable="true"></div>
+        </div>
+      </div>
+    </div>
   </body>
+
   <script src="script.js"></script>
 </html>
